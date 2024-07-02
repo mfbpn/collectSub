@@ -13,7 +13,10 @@ on:
   # -该规则表示每天从 0 点开始，每隔 4 个小时执行一次任务
   # 表达式生成  https://crontab.guru/
 
- 
+ # 解决方案
+permissions:
+  contents: write
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
